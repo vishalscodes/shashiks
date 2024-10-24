@@ -1,3 +1,9 @@
+:root {
+  --bfbfbf: #bfbfbf;
+  --white: #fff;
+  --black: #000;
+}
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -10,7 +16,7 @@
   }
 }
 .sidebar-container {
-  color: #bfbfbf;
+  color: var(--bfbfbf);
   font-size: 14px;
 }
 .sidebar-container h5 {
@@ -22,14 +28,14 @@
   text-decoration: none;
 }
 .sidebar-container a {
-  color: #bfbfbf !important;
+  color: var(--bfbfbf) !important;
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
   color: #0085a1 !important;
 }
 .sidebar-container .tags a {
-  border-color: #bfbfbf;
+  border-color: var(--bfbfbf);
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
@@ -153,7 +159,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: var(--white);
   line-height: 22px;
   padding: 18px 24px;
   bottom: 0px;
@@ -247,7 +253,7 @@
 }
 .paper-button.raised-button.colored {
   background: #4285f4;
-  color: #fff;
+  color: var(--white);
 }
 .paper-button[disabled] {
   background-color: #eaeaea !important;
@@ -265,13 +271,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 .paper-button input[type="submit"] {
   outline-color: #a3a3a3;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: var(--white);
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -300,7 +306,7 @@ button.paper-button {
 }
 /** Card **/
 .card {
-  background: white;
+  background: var(--white);
   width: 300px;
   height: 300px;
   position: relative;
@@ -576,7 +582,7 @@ pre.highlight {
   bottom: 0;
   left: 0;
   z-index: 100;
-  background: #fff;
+  background: var(--white);
   -webkit-transition: all 400ms cubic-bezier(0.32, 1, 0.23, 1);
   transition: all 400ms cubic-bezier(0.32, 1, 0.23, 1);
   -webkit-transform: translate(0, 100%);
@@ -740,7 +746,7 @@ select {
   color: #337ab7;
   border-color: #337ab7;
   padding: 0em 0.4em;
-  background: white;
+  background: var(--white);
 }
 select.sel-lang {
   min-height: 28px;
@@ -764,7 +770,7 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: white;
+  border-color: var(--white);
 }
 pre,
 .table-responsive {
@@ -918,7 +924,7 @@ samp {
     position: absolute;
     right: 0;
     border: none;
-    background: white;
+    background: var(--white);
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
       rgba(0, 0, 0, 0.239216) 0px 1px 4px;
@@ -1003,7 +1009,7 @@ samp {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
-  color: white;
+  color: var(--white);
   height: 56px;
   line-height: 25px;
 }
@@ -1021,7 +1027,7 @@ samp {
   background: rgba(0, 0, 0, 0.12);
 }
 .theme-btn a {
-  color: white !important;
+  color: var(--white) !important;
   padding: 20px;
   display: block;
 }
@@ -1034,7 +1040,7 @@ samp {
     font-size: 20px;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: var(--white);
     padding: 20px;
     line-height: 20px;
   }
@@ -1043,7 +1049,7 @@ samp {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: var(--white);
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -1167,7 +1173,7 @@ samp {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 85px 0 55px;
-  color: white;
+  color: var(--white);
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -1250,7 +1256,7 @@ samp {
   font-size: 16px;
 }
 .intro-header .post-heading .meta a {
-  color: white;
+  color: var(--white);
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
@@ -1267,13 +1273,13 @@ samp {
   position: absolute;
   bottom: 6px;
   right: 9px;
-  color: white;
+  color: var(--white);
   opacity: 0.3;
   font-size: 10px;
   z-index: 1;
 }
 .intro-header .header-img-credit a {
-  color: white;
+  color: var(--white);
 }
 @media only screen and (min-width: 768px) {
   .intro-header .header-img-credit {
@@ -1406,7 +1412,7 @@ footer .copyright a:focus {
 .btn-default:focus {
   background-color: #0085a1;
   border: 1px solid #0085a1;
-  color: white;
+  color: var(--white);
 }
 .pager {
   margin: 20px 0 0 !important;
@@ -1429,7 +1435,7 @@ footer .copyright a:focus {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -1444,13 +1450,13 @@ footer .copyright a:focus {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
+  color: var(--white);
   background-color: #0085a1;
   border: 1px solid #0085a1;
 }
 .pager li > a:hover > span,
 .pager li > a:focus > span {
-  color: white;
+  color: var(--white);
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -1461,21 +1467,21 @@ footer .copyright a:focus {
   cursor: not-allowed;
 }
 ::-moz-selection {
-  color: white;
+  color: var(--white);
   text-shadow: none;
   background: #0085a1;
 }
 ::selection {
-  color: white;
+  color: var(--white);
   text-shadow: none;
   background: #0085a1;
 }
 img::selection {
-  color: white;
+  color: var(--white);
   background: transparent;
 }
 img::-moz-selection {
-  color: white;
+  color: var(--white);
   background: transparent;
 }
 /* Hux add tags support */
@@ -1495,7 +1501,7 @@ img::-moz-selection {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 999em;
   padding: 0 10px 0 10px;
-  color: #ffffff;
+  color: var(--white);
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
@@ -1512,8 +1518,8 @@ img::-moz-selection {
 .tags .tag:hover,
 .tags a:active,
 .tags .tag:active {
-  color: white;
-  border-color: white;
+  color: var(--white);
+  border-color: var(--white);
   background-color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
 }
@@ -1679,7 +1685,7 @@ img::-moz-selection {
 .navbar-default .navbar-toggle .icon-bar {
   width: 18px;
   border-radius: 0px;
-  background-color: white;
+  background-color: var(--white);
 }
 .navbar-default .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 3px;
@@ -1717,13 +1723,13 @@ img::-moz-selection {
   bottom: 0;
   padding-bottom: 20px;
   opacity: 0.6;
-  color: #fff;
+  color: var(--white);
 }
 .page-fullscreen footer .copyright {
-  color: #fff;
+  color: var(--white);
 }
 .page-fullscreen footer .copyright a {
-  color: #fff;
+  color: var(--white);
 }
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;

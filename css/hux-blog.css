@@ -1769,12 +1769,3 @@ img::-moz-selection {
 .no-scroll {
   overflow-y: hidden;
 }
-#theme-switch i:last-child {
-  display: none;
-}
-.darkmode #theme-switch i:first-child {
-  display: none;
-}
-.darkmode #theme-switch i:last-child {
-  display: block;
-}

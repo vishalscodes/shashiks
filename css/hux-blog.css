@@ -1,4 +1,6 @@
 :root {
+  --pear: #a6e22e;
+  --gray: #808080;
   --gray75: #bfbfbf;
   --gray64: #a3a3a3;
   --gray66: #a8a8a8;
@@ -8,12 +10,24 @@
   --diesel: #1e0010;
   --mariner: #3367d6;
   --blue-arc: #0085a1;
+  --radical-red: #f92672;
   --whitesmoke: #f5f5f5;
   --lightyellow: #ffeb3b;
   --dark-charcoal: #323232;
   --royal-blue: #4285f4;
   --cadet-blue: #abb2bf;
+  --fountain-blue: #56b6c2;
+  --revolver: #311e3e;
+  --ollivine: #98c379;
+  --lavender: #c678dd;
+  --crocodile: #75715e;
+  --spring-wood: #f8f8f2;
+  --tundora: #404040;
+  --whiskey: #d19a66;
+  --sunglo: #e06c75;
+  --harvest-gold: #e5c07b;
   --shark: #282c34;
+  --emperor: #555;
   --white: #fff;
   --black: #000;
 }
@@ -351,10 +365,10 @@ pre.highlight {
 }
 .highlight .k,
 .language-coq .highlight .err {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .l {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .n {
   color: var(--cadet-blue);
@@ -388,58 +402,58 @@ pre.highlight {
   font-weight: 700;
 }
 .highlight .kc {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .kd {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .kn {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .kp {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .kr {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .kt {
-  color: #c678dd;
+  color: var(--lavender);
 }
 .highlight .ld {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .m {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .s {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .na {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .nb {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .nc {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .no {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .nd {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .ni {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .ne {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .nf {
   color: var(--cadet-blue);
 }
 .highlight .nl {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .nn {
   color: var(--cadet-blue);
@@ -448,88 +462,88 @@ pre.highlight {
   color: var(--cadet-blue);
 }
 .highlight .py {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .nt {
-  color: #e06c75;
+  color: var(--sunglo);
 }
 .highlight .nv {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .ow {
   font-weight: 700;
 }
 .highlight .w {
-  color: #f8f8f2;
+  color: var(--spring-wood);
 }
 .highlight .mf {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .mh {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .mi {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .mo {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .sb {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .sc {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .sd {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .s2 {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .se {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .sh {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .si {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .sx {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .sr {
-  color: #56b6c2;
+  color: var(--fountain-blue);
 }
 .highlight .s1 {
-  color: #98c379;
+  color: var(--ollivine);
 }
 .highlight .ss {
-  color: #56b6c2;
+  color: var(--fountain-blue);
 }
 .highlight .bp {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .vc {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .vg {
-  color: #e5c07b;
+  color: var(--harvest-gold);
 }
 .highlight .vi {
-  color: #e06c75;
+  color: var(--sunglo);
 }
 .highlight .il {
-  color: #d19a66;
+  color: var(--whiskey);
 }
 .highlight .gu {
-  color: #75715e;
+  color: var(--crocodile);
 }
 .highlight .gd {
-  color: #f92672;
+  color: var(--radical-red);
 }
 .highlight .gi {
-  color: #a6e22e;
+  color: var(--pear);
 }
 .highlighter-rouge .highlight {
   margin-bottom: 10px;
@@ -538,7 +552,7 @@ pre.highlight {
 .highlighter-rouge .highlight pre {
   font-size: 14px;
   line-height: 1.5;
-  color: #555;
+  color: var(--emperor);
   background: transparent;
   border: 0;
   margin: 0;
@@ -643,7 +657,7 @@ pre.highlight {
   width: 100%;
   font-size: 30px;
   font-weight: bold;
-  color: #404040;
+  color: var(--tundora);
 }
 @media only screen and (min-width: 768px) {
   .search-page #search-input {
@@ -660,7 +674,7 @@ pre.highlight {
 .search-icon-close {
   cursor: pointer;
   font-size: 30px;
-  color: #311e3e;
+  color: var(--revolver);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -684,7 +698,7 @@ body {
     "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 16px;
-  color: #404040;
+  color: var(--tundora);
   overflow-x: hidden;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -721,7 +735,7 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: #404040;
+  color: var(--tundora);
 }
 a:hover,
 a:focus {
@@ -735,7 +749,7 @@ article {
   overflow: hidden;
 }
 blockquote {
-  color: gray;
+  color: var(--gray);
   font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
@@ -839,7 +853,7 @@ samp {
 .post-container h4 {
   font-size: 22px;
   font-weight: 600;
-  color: gray;
+  color: var(--gray);
 }
 .post-container h4 + p {
   margin-top: 10px;
@@ -848,7 +862,7 @@ samp {
 .post-container h6 {
   font-size: 20px;
   font-weight: 600;
-  color: gray;
+  color: var(--gray);
 }
 .post-container h5 + p,
 .post-container h6 + p {
@@ -1078,17 +1092,17 @@ samp {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .navbar-custom.invert .navbar-toggle .icon-bar {
-  background-color: #404040;
+  background-color: var(--tundora);
 }
 .navbar-custom.invert .navbar-brand {
-  color: #404040;
+  color: var(--tundora);
 }
 .navbar-custom.invert .navbar-brand:hover,
 .navbar-custom.invert .navbar-brand:focus {
   color: var(--blue-arc);
 }
 .navbar-custom.invert .nav li a {
-  color: #404040;
+  color: var(--tundora);
 }
 .navbar-custom.invert .nav li a:hover,
 .navbar-custom.invert .nav li a:focus {
@@ -1119,14 +1133,14 @@ samp {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: var(--tundora);
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: var(--blue-arc);
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: var(--tundora);
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
@@ -1159,7 +1173,7 @@ samp {
 .intro-header.style-text .post-heading,
 .intro-header.style-text .page-heading {
   padding: 85px 0 20px;
-  color: #404040;
+  color: var(--tundora);
 }
 .intro-header.style-text .site-heading .subheading,
 .intro-header.style-text .post-heading .subheading,
@@ -1168,8 +1182,8 @@ samp {
 }
 .intro-header.style-text .tags a,
 .intro-header.style-text .tags .tag {
-  border-color: #404040;
-  color: #404040;
+  border-color: var(--tundora);
+  color: var(--tundora);
 }
 .intro-header.style-text .tags a:hover,
 .intro-header.style-text .tags .tag:hover,
@@ -1303,7 +1317,7 @@ samp {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: var(--tundora);
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
@@ -1332,7 +1346,7 @@ samp {
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: var(--tundora);
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
@@ -1460,7 +1474,7 @@ footer .copyright a:focus {
   }
 }
 .pager li > a {
-  color: #404040;
+  color: var(--tundora);
 }
 .pager li > a:hover,
 .pager li > a:focus {
@@ -1477,7 +1491,7 @@ footer .copyright a:focus {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: var(--gray64);
-  background-color: #404040;
+  background-color: var(--tundora);
   cursor: not-allowed;
 }
 ::-moz-selection {
@@ -1754,4 +1768,13 @@ img::-moz-selection {
 }
 .no-scroll {
   overflow-y: hidden;
+}
+#theme-switch i:last-child {
+  display: none;
+}
+.darkmode #theme-switch i:first-child {
+  display: none;
+}
+.darkmode #theme-switch i:last-child {
+  display: block;
 }

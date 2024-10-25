@@ -2,12 +2,18 @@
   --gray75: #bfbfbf;
   --gray64: #a3a3a3;
   --gray66: #a8a8a8;
+  --shuttle-gray: #5c6370;
+  --fresh-eggplant: #960050;
+  --bright-gray: #eaeaea;
+  --diesel: #1e0010;
+  --mariner: #3367d6;
   --blue-arc: #0085a1;
   --whitesmoke: #f5f5f5;
   --lightyellow: #ffeb3b;
   --dark-charcoal: #323232;
   --royal-blue: #4285f4;
-  --bright-gray: #eaeaea;
+  --cadet-blue: #abb2bf;
+  --shark: #282c34;
   --white: #fff;
   --black: #000;
 }
@@ -272,7 +278,7 @@
   background-color: var(--light-gray);
 }
 .paper-button.raised-button.colored:hover {
-  background-color: #3367d6;
+  background-color: var(--mariner);
 }
 button.paper-button {
   border: 0;
@@ -323,22 +329,22 @@ button.paper-button {
 }
 .highlight,
 pre.highlight {
-  background: #282c34;
-  color: #abb2bf;
+  background: var(--shark);
+  color: var(--cadet-blue);
 }
 .highlight pre {
-  background: #282c34;
+  background: var(--shark);
 }
 .highlight .hll {
-  background: #282c34;
+  background: var(--shark);
 }
 .highlight .c {
-  color: #5c6370;
+  color: var(--shuttle-gray);
   font-style: italic;
 }
 .highlight .err {
-  color: #960050;
-  background-color: #1e0010;
+  color: var(--fresh-eggplant);
+  background-color: var(--diesel);
 }
 .language-coq .highlight .err {
   background-color: transparent;
@@ -351,28 +357,28 @@ pre.highlight {
   color: #98c379;
 }
 .highlight .n {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlight .o {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlight .p {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlight .cm {
-  color: #5c6370;
+  color: var(--shuttle-gray);
   font-style: italic;
 }
 .highlight .cp {
-  color: #5c6370;
+  color: var(--shuttle-gray);
   font-style: italic;
 }
 .highlight .c1 {
-  color: #5c6370;
+  color: var(--shuttle-gray);
   font-style: italic;
 }
 .highlight .cs {
-  color: #5c6370;
+  color: var(--shuttle-gray);
   font-style: italic;
 }
 .highlight .ge {
@@ -430,16 +436,16 @@ pre.highlight {
   color: #e5c07b;
 }
 .highlight .nf {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlight .nl {
   color: #e5c07b;
 }
 .highlight .nn {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlight .nx {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlight .py {
   color: #e5c07b;
@@ -544,7 +550,7 @@ pre.highlight {
   border: 0 !important;
 }
 .highlighter-rouge .highlight .rouge-code pre {
-  color: #abb2bf;
+  color: var(--cadet-blue);
 }
 .highlighter-rouge .highlight .table-responsive {
   margin: 0px;

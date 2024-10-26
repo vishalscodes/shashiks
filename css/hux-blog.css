@@ -40,81 +40,51 @@
 }
 
 .darkmode {
-  --pear: #591dd1;
+  --pear: #591dd1 !important;
+  --gray: #7f7f7f !important;
+  --gray75: #404040 !important;
+  --gray64: #5c5c5c !important;
+  --gray66: #575757 !important;
+  --shuttle-gray: #a39c8f !important;
+  --fresh-eggplant: #69ffaf !important;
+  --bright-gray: #151515 !important;
+  --diesel: #e1ffef !important;
+  --alto: #222222 !important;
+  --mariner: #cc9829 !important;
+  --black-haze: #0c0a0a !important;
+  --whisper: #1b1b1b !important;
+  --blue-arc: #ff7a5e !important;
+  --radical-red: #06d98d !important;
 
-  --gray: #7f7f7f;
+  --concrete: #0d0d0d !important;
 
-  --gray75: #404040;
+  --whitesmoke: #0a0a0a !important;
 
-  --gray64: #5c5c5c;
+  --lightyellow: #0014c4 !important;
 
-  --gray66: #575757;
+  --dark-charcoal: #cdcdcd !important;
 
-  --shuttle-gray: #a39c8f;
+  --royal-blue: #bd7a0b !important;
+  --cadet-blue: #544d40 !important;
+  --fountain-blue: #a9493d !important;
+  --mercury: #131313 !important;
+  --astral: #cc8548 !important;
+  --gallery: #111111 !important;
+  --revolver: #cee1c1 !important;
+  --ollivine: #673c86 !important;
+  --lavender: #398722 !important;
+  --crocodile: #8a8ea1 !important;
+  --spring-wood: #07070d !important;
+  --tundora: #bfbfbf !important;
+  --whiskey: #2e6599 !important;
+  --sunglo: #1f938a !important;
+  --harvest-gold: #1a3f84 !important;
+  --shark: #d7d3cb !important;
+  --emperor: #aaaaaa !important;
+  --white: #000 !important;
+  --black: #fff !important;
 
-  --fresh-eggplant: #69ffaf;
-
-  --bright-gray: #151515;
-
-  --diesel: #e1ffef;
-
-  --alto: #222222;
-
-  --mariner: #cc9829;
-
-  --black-haze: #0c0a0a;
-
-  --whisper: #1b1b1b;
-
-  --blue-arc: #ff7a5e;
-
-  --radical-red: #06d98d;
-
-  --concrete: #0d0d0d;
-
-  --whitesmoke: #0a0a0a;
-
-  --lightyellow: #0014c4;
-
-  --dark-charcoal: #cdcdcd;
-
-  --royal-blue: #bd7a0b;
-
-  --cadet-blue: #544d40;
-
-  --fountain-blue: #a9493d;
-
-  --mercury: #131313;
-
-  --astral: #cc8548;
-
-  --gallery: #111111;
-
-  --revolver: #cee1c1;
-
-  --ollivine: #673c86;
-
-  --lavender: #398722;
-
-  --crocodile: #8a8ea1;
-
-  --spring-wood: #07070d;
-
-  --tundora: #bfbfbf;
-
-  --whiskey: #2e6599;
-
-  --sunglo: #1f938a;
-
-  --harvest-gold: #1a3f84;
-
-  --shark: #d7d3cb;
-
-  --emperor: #aaaaaa;
-  --white: #000;
-  --black: #fff;
-
-  color-scheme: dark;
+  color-scheme: dark !important;
 }
 
 @media (min-width: 1200px) {

@@ -8,15 +8,22 @@
   --fresh-eggplant: #960050;
   --bright-gray: #eaeaea;
   --diesel: #1e0010;
+  --alto: #dddddd;
   --mariner: #3367d6;
+  --black-haze: #f3f5f5;
+  --whisper: #e4e4e4;
   --blue-arc: #0085a1;
   --radical-red: #f92672;
+  --concrete: #f2f2f2;
   --whitesmoke: #f5f5f5;
   --lightyellow: #ffeb3b;
   --dark-charcoal: #323232;
   --royal-blue: #4285f4;
   --cadet-blue: #abb2bf;
   --fountain-blue: #56b6c2;
+  --mercury: #ececec;
+  --astral: #337ab7;
+  --gallery: #eeeeee;
   --revolver: #311e3e;
   --ollivine: #98c379;
   --lavender: #c678dd;
@@ -769,10 +776,10 @@ img.shadow {
   box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
 select {
-  -webkit-appearance: none;
+  --webkit-appearance: none;
   margin-top: 15px;
-  color: #337ab7;
-  border-color: #337ab7;
+  color: var(--astral);
+  border-color: var(--astral);
   padding: 0em 0.4em;
   background: var(--white);
 }
@@ -787,7 +794,7 @@ table.table > tbody th,
 table.table > thead th,
 table.table > tbody td,
 table.table > thead td {
-  border: 1px solid #eee !important;
+  border: 1px solid var(--gallery) !important;
 }
 @media screen and (max-width: 767px) {
   .table-responsive {
@@ -820,7 +827,7 @@ samp {
   margin-bottom: 15px;
 }
 .post-container a {
-  color: #337ab7;
+  color: var(--astral);
 }
 .post-container a:hover,
 .post-container a:focus {
@@ -846,7 +853,7 @@ samp {
 .post-container h2::before {
   content: " ";
   display: block;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--mercury);
   margin-top: 44px;
   margin-bottom: 30px;
 }
@@ -1127,7 +1134,7 @@ samp {
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid var(--concrete);
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -1408,7 +1415,7 @@ footer .copyright {
   margin-bottom: 0;
 }
 footer .copyright a {
-  color: #337ab7;
+  color: var(--astral);
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
@@ -1578,7 +1585,7 @@ img::-moz-selection {
   line-height: 28px;
   margin: 0 2px;
   margin-bottom: 8px;
-  background: #f3f5f5;
+  background: var(--black-haze);
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
@@ -1604,7 +1611,7 @@ img::-moz-selection {
 #tag_cloud .tag.tag-button--all:active,
 #tag_cloud a.tag-button--all.focus,
 #tag_cloud .tag.tag-button--all.focus {
-  background-color: #e4e4e4 !important;
+  background-color: var(--whisper) !important;
 }
 @media only screen and (min-width: 768px) {
   #tag_cloud {
@@ -1760,7 +1767,7 @@ img::-moz-selection {
   color: var(--white);
 }
 .page-fullscreen footer .copyright a:hover {
-  color: #ddd;
+  color: var(--alto);
 }
 .MathJax_SVG_Display {
   overflow: auto;

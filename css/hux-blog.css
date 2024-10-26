@@ -113,6 +113,8 @@
   --emperor: #aaaaaa;
   --white: #000;
   --black: #fff;
+
+  color-scheme: dark;
 }
 
 @media (min-width: 1200px) {

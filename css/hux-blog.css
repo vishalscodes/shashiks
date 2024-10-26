@@ -39,6 +39,82 @@
   --black: #000;
 }
 
+.darkmode {
+  --pear: #591dd1;
+
+  --gray: #7f7f7f;
+
+  --gray75: #404040;
+
+  --gray64: #5c5c5c;
+
+  --gray66: #575757;
+
+  --shuttle-gray: #a39c8f;
+
+  --fresh-eggplant: #69ffaf;
+
+  --bright-gray: #151515;
+
+  --diesel: #e1ffef;
+
+  --alto: #222222;
+
+  --mariner: #cc9829;
+
+  --black-haze: #0c0a0a;
+
+  --whisper: #1b1b1b;
+
+  --blue-arc: #ff7a5e;
+
+  --radical-red: #06d98d;
+
+  --concrete: #0d0d0d;
+
+  --whitesmoke: #0a0a0a;
+
+  --lightyellow: #0014c4;
+
+  --dark-charcoal: #cdcdcd;
+
+  --royal-blue: #bd7a0b;
+
+  --cadet-blue: #544d40;
+
+  --fountain-blue: #a9493d;
+
+  --mercury: #131313;
+
+  --astral: #cc8548;
+
+  --gallery: #111111;
+
+  --revolver: #cee1c1;
+
+  --ollivine: #673c86;
+
+  --lavender: #398722;
+
+  --crocodile: #8a8ea1;
+
+  --spring-wood: #07070d;
+
+  --tundora: #bfbfbf;
+
+  --whiskey: #2e6599;
+
+  --sunglo: #1f938a;
+
+  --harvest-gold: #1a3f84;
+
+  --shark: #d7d3cb;
+
+  --emperor: #aaaaaa;
+  --white: #000;
+  --black: #fff;
+}
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {

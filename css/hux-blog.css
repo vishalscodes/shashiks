@@ -39,7 +39,7 @@
   --black: #000;
 }
 
-.darkmode {
+html .darkmode {
   --pear: #591dd1 !important;
   --gray: #7f7f7f !important;
   --gray75: #404040 !important;

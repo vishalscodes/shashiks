@@ -196,7 +196,7 @@ th {
   *,
   *:before,
   *:after {
-    color: #000 !important;
+    color: #000;
     text-shadow: none !important;
     background: transparent !important;
     -webkit-box-shadow: none !important;
@@ -243,14 +243,14 @@ th {
     page-break-after: avoid;
   }
   select {
-    background: #fff !important;
+    background: #fff;
   }
   .navbar {
     display: none;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
-    border-top-color: #000 !important;
+    border-top-color: #000;
   }
   .label {
     border: 1px solid #000;
@@ -260,11 +260,11 @@ th {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #fff;
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    border: 1px solid #ddd;
   }
 }
 @font-face {

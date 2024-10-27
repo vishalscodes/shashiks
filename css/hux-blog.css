@@ -83,8 +83,6 @@ html .darkmode {
   --emperor: #aaaaaa !important;
   --white: #000 !important;
   --black: #fff !important;
-
-  color-scheme: dark !important;
 }
 
 @media (min-width: 1200px) {

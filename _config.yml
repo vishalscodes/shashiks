@@ -73,7 +73,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "TOGETHER WE CAN <br> Owner, Shashi KS Channel"
-sidebar-avatar: "/shashi ks logo_out.png" # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: "img/site-logos/shashi ks logo_out.png" # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags

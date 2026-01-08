@@ -10,7 +10,7 @@ We also publish videos regarding specific competitive examinations and update ab
 
 I created this website to connect with you all and also increase our versatility in providing content.
 
-### Here's a magnified view of the many topics on which I post content.
+### Here's a magnified view of the many topics on which I post content:
 
 - Content on Operating Systems, C Programming, Java & J2EE, Data Structures, Compiler Design, System Software, etc.
 - Content on useful software applications

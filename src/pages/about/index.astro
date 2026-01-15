@@ -5,24 +5,98 @@ import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
 
 const headings = [
-  { depth: 2, slug: 'hobbies', text: 'Hobbies' },
-  { depth: 2, slug: 'tools', text: 'Tools' },
-  { depth: 2, slug: 'social-networks', text: 'Social Networks' },
-  { depth: 2, slug: 'gossips', text: 'Gossips' },
-  { depth: 2, slug: 'about-blog', text: 'About Blog' }
+  { depth: 2, slug: 'who-am-i', text: 'Who am I?' },
+  { depth: 2, slug: 'content-ecosystem', text: 'Content Ecosystem' },
+  { depth: 2, slug: 'social-media', text: 'Social Media Links' },
+  { depth: 2, slug: 'credits', text: 'Credits' }
 ]
 ---
 
-<PageLayout title='About' {headings} comment>
-  <p>Developer / Designer</p>
-  <p>
+<PageLayout title='About' {headings}>
+  <span>
+    This is the About Page of the Official Website of the Shashi KS YouTube Channel, where you can
+    read blogs, access my test packages and do even more!
+  </span>
+  <h2 class='text-lg font-medium' id='who-am-i'>Who am I?</h2>
+  <span>
+    I am Shashikala, an educational content creator who puts videos on topics like Python, Java,
+    CNS, Operating Systems, and lots more.
+  </span>
+  <span>
+    We also publish videos regarding specific competitive examinations and update about them
+    regularly.
+  </span>
+  <span>
+    I created this website to connect with you all and also increase our versatility in providing
+    content.
+  </span>
+  <h2 class='text-lg font-medium' id='content-ecosystem'>
+    Here's a magnified view of the many topics on which I post content:
+  </h2>
+  <ul>
+    <li>
+      Content on Operating Systems, C Programming, Java &amp; J2EE, Data Structures, Compiler
+      Design, System Software, etc.
+    </li>
+    <li>Content on useful software applications</li>
+    <li>
+      Preparatory Materials, Solved Question Papers for GATE, TRB, UGC NET, PGTRB, PGT CS Exam.
+    </li>
+    <li>Important and Reliable Educational updates/Social Awareness Content.</li>
+  </ul>
+  <h2 class='text-lg font-medium' id='social-media'>Social Media Links</h2>
+  <span>
+    Check the <a href='/links'>Links</a> page.
+  </span>
+  <!--
+    <span>
+    <Substats
+      stats={[
+        {
+          platform: 'YouTube',
+          icon: 'youtube',
+          color: '#2ca5e0',
+          link: 'https://www.youtube.com/@ShashiKS',
+          text: 'subscribers',
+          api: 'youtube/UCYTShEnB7tKh4s0f071edyQ'
+        },
+        {
+          platform: 'Telegram Group',
+          icon: 'telegram',
+          color: '#7DF9FF',
+          link: 'https://t.me/+RuhcnuYIADplYjI1',
+          text: 'members',
+          api: 'telegram/shashiks'
+        },
+        {
+          platform: 'Telegram Channel',
+          icon: 'telegram',
+          color: '#33A8E5',
+          link: 'https://t.me/shashikschannel',
+          text: 'subscribers',
+          api: 'telegram/shashiks'
+        }
+      ]}
+    />
+  </span>
+-->
+  <h2 class='text-lg font-medium' id='credits'>Credits</h2>
+  <span>
+    This website is based on the <a href='https://github.com/cworld1/astro-theme-pure'
+      >Astro Theme Pure</a
+    > template.
+  </span>
+
+  <!--
+  <span>Developer / Designer</span>
+  <span>
     Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
     dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
     possit voluptatum.
-  </p>
-  <p>
+  </span>
+  <span>
     Motto: Stay hungry, Stay foolish. <Spoiler>这里可以夹私货，比如为什么要演奏春日影！</Spoiler>
-  </p>
+  </span>
   <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' variant='ahead' />
 
   {/* general-talk */}
@@ -39,7 +113,7 @@ const headings = [
 
   {/* tools */}
   <h2 id='tools'>Tools</h2>
-  <p>Current support tools as follow:</p>
+  <span>Current support tools as follow:</span>
   <ToolSection
     class='mb-5'
     title='Design'
@@ -157,24 +231,24 @@ const headings = [
 
   {/* social-networks */}
   <h2 id='social-networks'>Social Networks</h2>
-  <p>
+  <span>
     Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
     dissentiunt, cu meliore fuisset mei, vel quod voluptua ne.
-  </p>
+  </span>
   <Substats
     stats={[
       {
-        platform: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/cworld1',
-        text: 'followers',
-        api: 'github/cworld1'
+        platform: 'YouTube',
+        icon: 'youtube',
+        link: 'https://www.youtube.com/@ShashiKS',
+        text: 'subscribers',
+        api: 'youtube/UCYTShEnB7tKh4s0f071edyQ'
       },
       {
         platform: 'Telegram',
         icon: 'telegram',
         color: '#2ca5e0',
-        link: 'https://t.me/cworld0_cn',
+        link: 'https://t.me/+RuhcnuYIADplYjI1',
         text: 'subscribers',
         api: 'telegram/cworld0_cn'
       },
@@ -199,7 +273,7 @@ const headings = [
 
   {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>
-  <p>Website history:</p>
+  <span>Website history:</span>
   <Timeline
     events={[
       {
@@ -218,10 +292,10 @@ const headings = [
       }
     ]}
   />
-  <p>
+  <span>
     The smooth operation and personalized customization of website also rely on the resources and
     technical support provided by the following excellent projects/service providers:
-  </p>
+  </span>
   <ul>
     <li>Domain: <a href='#' target='_blank'>Vercel</a></li>
     <li>
@@ -246,5 +320,5 @@ const headings = [
         >Substats</a
       >
     </li>
-  </ul>
+  </ul> -->
 </PageLayout>

@@ -3,11 +3,12 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: 'Shashi KS Website',
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'Shashi KS',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description:
+    'This is the official website of the Shashi KS YouTube Channel - This is an educational site for competitive exams, news updates and more.',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
@@ -49,8 +50,8 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
-      { title: 'Projects', link: '/projects' },
+      // { title: 'Docs', link: '/docs' },
+      // { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
     ]
@@ -63,22 +64,22 @@ export const theme: ThemeUserConfig = {
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
       // Registration link
-      {
+      /* {
         title: 'Moe ICP 114514',
         link: 'https://icp.gov.moe/?keyword=114514',
         style: 'text-sm' // Uno/TW CSS class
-      },
+      }, */
       // Privacy Policy link
-      {
+      /* {
         title: 'Site Policy',
         link: '/terms/list',
         pos: 2 // position set to 2 will be appended to copyright line
-      }
+      } */
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
-    credits: true,
+    credits: false,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: { github: 'https://github.com/vishalscodes/shashiks' }
   },
 
   // [Content]
@@ -92,9 +93,9 @@ export const theme: ThemeUserConfig = {
       }
     },
     /** Blog page size for pagination (optional) */
-    blogPageSize: 8,
+    blogPageSize: 8
     // Currently support weibo, x, bluesky
-    share: ['weibo', 'x', 'bluesky']
+    // share: ['weibo', 'x', 'bluesky']
   }
 }
 
@@ -114,8 +115,8 @@ export const integ: IntegrationUserConfig = {
     applyTip: [
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://astro-pure.js.org/' },
-      { name: 'Avatar', val: 'https://astro-pure.js.org/favicon/favicon.ico' }
+      { name: 'Link', val: 'https://shashiks.netlify.app/' },
+      { name: 'Avatar', val: 'https://shashiks.netlify.app/src/assets/avatar.png' }
     ],
     // Cache avatars in `public/avatars/` to improve user experience.
     cacheAvatar: false
@@ -159,7 +160,7 @@ export const integ: IntegrationUserConfig = {
   },
   // Comment system
   waline: {
-    enable: true,
+    enable: false,
     // Server service link
     server: 'https://astro-theme-pure-waline.arthals.ink/',
     // Show meta info for comments
@@ -179,7 +180,7 @@ export const integ: IntegrationUserConfig = {
     }
   }
 }
-
+/*
 export const terms: CardListData = {
   title: 'Terms content',
   list: [
@@ -200,7 +201,7 @@ export const terms: CardListData = {
       link: '/terms/disclaimer'
     }
   ]
-}
+} */
 
 const config = { ...theme, integ } as Config
 export default config

@@ -8,7 +8,7 @@
           "name": "YouTube",
           "intro": "My YouTube Channel",
           "link": "https://www.youtube.com/@ShashiKS",
-          "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/YouTube_social_red_circle_%282024%29.svg/500px-YouTube_social_red_circle_%282024%29.svg.png?20241117222047"
+          "avatar": "/images/YouTube.png"
         },
         {
           "name": "Email",
@@ -20,19 +20,19 @@
           "name": "Telegram Group",
           "intro": "My Telegram Group - for discussions",
           "link": "https://tinyurl.com/shashiks-telegram-group",
-          "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Telegram_2019_simple_logo.svg/640px-Telegram_2019_simple_logo.svg.png"
+          "avatar": "/images/Telegram_logo.png"
         },
         {
           "name": "Telegram Channel",
           "intro": "My Telegram Group - for announcements and other useful information",
           "link": "https://t.me/shashikschannel",
-          "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Telegram_X_2019_Logo.svg/640px-Telegram_X_2019_Logo.svg.png"
+          "avatar": "/images/Telegram_X.png"
         },
         {
           "name": "Github",
           "intro": "Source Code of this website",
           "link": "https://github.com/vishalscodes/shashiks",
-          "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Github-circle_%28CoreUI_Icons_v1.0.0%29.svg/640px-Github-circle_%28CoreUI_Icons_v1.0.0%29.svg.png"
+          "avatar": "/images/Github.png"
         }
       ]
     },
@@ -49,13 +49,13 @@
           "name": "Astro Theme Pure",
           "intro": "A simple, fast and powerful blog & document theme built by Astro",
           "link": "https://github.com/cworld1/astro-theme-pure",
-          "avatar": "https://astro-pure.js.org/_image?href=%2F_astro%2Favatar.g4D3QZBA.png&w=1370&h=1370&f=webp"
+          "avatar": "/images/astro-pure.webp"
         },
         {
           "name": "Astro",
           "intro": "The web framework for content-driven websites",
           "link": "https://astro.build/",
-          "avatar": "https://avatars.githubusercontent.com/u/44914786?s=200&v=4"
+          "avatar": "/images/astro.png"
         }
       ]
     }

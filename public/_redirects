@@ -1,2 +1,0 @@
-# Syntax: /old-pattern  /new-pattern  status-code
-/:year/:month/:day/:slug/  /blog/:slug/  301

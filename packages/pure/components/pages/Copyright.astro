@@ -1,6 +1,5 @@
 ---
 import type { CollectionKey, InferEntrySchema } from 'astro:content'
-
 import config from 'virtual:config'
 
 import { cn, getFormattedDate } from '../../utils'
@@ -19,7 +18,7 @@ const {
 
 const image = typeof heroImage?.src === 'string' ? heroImage?.src : (heroImage?.src?.src ?? '')
 
-const shares = {
+/* const shares = {
   weibo: {
     link: `http://service.weibo.com/share/share.php?url=${Astro.url}&title=${title}&pic=${image}`
   },
@@ -29,7 +28,7 @@ const shares = {
   bluesky: {
     link: `https://bsky.app/intent/compose?text=${title}%0A${Astro.url}`
   }
-} as const
+} as const */
 ---
 
 <div
@@ -55,7 +54,7 @@ const shares = {
     {
       publishDate && (
         <div class='flex gap-x-2 sm:min-w-16 sm:flex-col'>
-          <span>Published at</span>
+          <span>Published on</span>
           <span class='text-sm text-foreground max-sm:place-self-center'>
             {getFormattedDate(publishDate, {
               month: 'long'
@@ -68,7 +67,7 @@ const shares = {
       <span>Copyright</span>
       <a
         class='text-sm text-foreground max-sm:place-self-center'
-        href='https://creativecommons.org/licenses/by/4.0/'
+        href='https://creativecommons.org/licenses/by-nc-sa/4.0/'
         target='_blank'
       >
         CC BY-NC-SA 4.0
@@ -93,6 +92,7 @@ const shares = {
       >
         <Icon class='size-5' name='qrcode' />
       </button>
+      <!-- 
       {
         config.content.share.map((share) => (
           <a
@@ -105,14 +105,14 @@ const shares = {
             <Icon class='size-5' name={share} />
           </a>
         ))
-      }
+      } -->
     </div>
     <QRCode
       class='absolute z-10 -mt-2 box-content max-h-0 max-w-44 overflow-hidden rounded-xl border bg-muted p-4 opacity-0 transition-all duration-300 ease-in-out'
     />
   </div>
 </div>
-
+<!-- 
 <div class='mx-6 rounded-b-xl border border-t-0 px-3 pb-1.5 pt-1 sm:mx-8 sm:px-4'>
   <a
     href='/projects#sponsorship'
@@ -123,7 +123,7 @@ const shares = {
     <Icon class='box-content size-5 p-1' name='receive-money' />
   </a>
 </div>
-
+-->
 <style>
   #qrcode-container.expanded {
     max-height: 11rem;

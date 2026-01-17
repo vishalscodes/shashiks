@@ -37,7 +37,7 @@ export default defineConfig({
   // [Adapter]
   // https://docs.astro.build/en/guides/deploy/
   adapter: netlify(),
-  output: 'server',
+  output: 'static',
   // Local (standalone)
   // adapter: node({ mode: 'standalone' }),
   // output: 'server',

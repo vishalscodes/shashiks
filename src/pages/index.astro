@@ -36,6 +36,7 @@ if (!images[imagePath])
         src={images[imagePath]()}
         alt={config.logo.alt || 'Profile'}
         class='h-28 w-auto rounded-xl border p-1'
+        width={200}
         loading='eager'
         fetchpriority='high'
       />
@@ -73,31 +74,34 @@ if (!images[imagePath])
       </a>
     </section> -->
 
-    <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-      <Section title='About'>
-        <p class='text-muted-foreground'>Educator / YouTuber</p>
-        <p class='text-muted-foreground'>
-          I am Shashikala, an educational content creator who puts videos on topics like Python, Java, CNS, Operating Systems, and lots more. We also publish videos regarding specific competitive examinations and update about them regularly. I created this website to connect with you all and also increase our versatility in providing content.
-        </p>
-        <Button title='More about me' class='w-fit self-end' href='/about' variant='ahead' />
-      </Section>
-      {
-        allPostsByDate.length > 0 && (
-          <Section title='Posts'>
-            <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
-              {allPostsByDate.map((p) => (
-                <li class='flex flex-col gap-x-2 sm:flex-row'>
-                  <PostPreview post={p} />
-                </li>
-              ))}
-            </ul>
-            <Button title='More posts' class='w-fit self-end' href='/blog' variant='ahead' />
-          </Section>
-        )
-      }
+      <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
+        <Section title='About'>
+          <p class='text-muted-foreground'>Educator / YouTuber</p>
+          <p class='text-muted-foreground'>
+            I am Shashikala, an educational content creator who puts videos on topics like Python,
+            Java, CNS, Operating Systems, and lots more. We also publish videos regarding specific
+            competitive examinations and update about them regularly. I created this website to
+            connect with you all and also increase our versatility in providing content.
+          </p>
+          <Button title='More about me' class='w-fit self-end' href='/about' variant='ahead' />
+        </Section>
+        {
+          allPostsByDate.length > 0 && (
+            <Section title='Posts'>
+              <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
+                {allPostsByDate.map((p) => (
+                  <li class='flex flex-col gap-x-2 sm:flex-row'>
+                    <PostPreview post={p} />
+                  </li>
+                ))}
+              </ul>
+              <Button title='More posts' class='w-fit self-end' href='/blog' variant='ahead' />
+            </Section>
+          )
+        }
 
-      {
-        /* <Section title='Experience'>
+        {
+          /* <Section title='Experience'>
       <Card
         heading='Lorem Ipsum'
         subheading='Sit amet consectetur'
@@ -124,8 +128,8 @@ if (!images[imagePath])
         imageClass='h-12 w-auto md:-start-16'
       />
     </Section> */
-      }
-     <!--
+        }
+        <!--
       <Section title='Education'>
         <Card
           as='a'
@@ -193,5 +197,7 @@ if (!images[imagePath])
     </div>
     <Quote class='mt-12' />
     -->
-  </main>
-</PageLayout>
+      </div>
+    </section>
+  </main></PageLayout
+>

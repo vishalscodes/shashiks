@@ -49,11 +49,11 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Blog', link: '/blog' },
+      { title: 'Blog', link: '/blog/' },
       // { title: 'Docs', link: '/docs' },
       // { title: 'Projects', link: '/projects' },
-      { title: 'Links', link: '/links' },
-      { title: 'About', link: '/about' }
+      { title: 'Links', link: '/links/' },
+      { title: 'About', link: '/about/' }
     ]
   },
 
@@ -116,7 +116,7 @@ export const integ: IntegrationUserConfig = {
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
       { name: 'Link', val: 'https://shashiks.netlify.app/' },
-      { name: 'Avatar', val: 'https://shashiks.netlify.app/src/assets/avatar.png' }
+      { name: 'Avatar', val: 'https://shashiks.netlify.app/src/assets/avatar.webp' }
     ],
     // Cache avatars in `public/avatars/` to improve user experience.
     cacheAvatar: false

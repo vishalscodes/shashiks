@@ -124,9 +124,21 @@ export default defineConfig({
         // styles: ["normal", "italics"],
         // subsets: ["cyrillic-ext", "cyrillic", "greek-ext", "greek", "vietnamese", "latin-ext", "latin"],
         // fallbacks: ["sans-serif"],
+        fallbacks: [
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'sans-serif'
+        ],
         styles: ['normal', 'italic'],
         weights: [400, 500],
-        subsets: ['latin']
+        subsets: ['latin'],
+        display: 'swap'
       }
     ]
   }

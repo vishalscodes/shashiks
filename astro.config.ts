@@ -152,8 +152,7 @@ export default defineConfig({
   vite: {
     build: {
       assetsInlineLimit: 4096, // 4KB
-      cssMinify: true,
-      minify: 'terser'
+      cssMinify: true
     }
   }
 })

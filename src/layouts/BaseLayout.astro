@@ -24,7 +24,7 @@ const {
 <html lang={config.locale.lang}>
   <head>
     <BaseHead {articleDate} {description} {ogImage} {title} />
-    <ThemeProvider />
+    <ThemeProvider client:visible />
   </head>
 
   <body class='flex justify-center bg-background text-foreground' {...props}>

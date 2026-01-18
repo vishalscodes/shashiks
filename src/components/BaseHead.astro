@@ -31,8 +31,6 @@ const socialImageURL = new URL(ogImage ? ogImage : config.socialCard, Astro.url)
 <link rel='manifest' href='/favicon/site.webmanifest' />
 
 {/* Font preloads */}
-<link rel='preconnect' href='https://api.fontshare.com' />
-<link rel='dns-prefetch' href='https://api.fontshare.com' />
 <Font cssVariable='--font-satoshi' preload={[{ subset: 'latin', style: 'normal' }]} />
 <style>
   body {

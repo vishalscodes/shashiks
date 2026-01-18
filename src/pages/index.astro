@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 
-import { Quote } from 'astro-pure/advanced'
+// import { Quote } from 'astro-pure/advanced'
 import { PostPreview } from 'astro-pure/components/pages'
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
 import { Button, Card, Icon, Label } from 'astro-pure/user'
@@ -11,9 +11,9 @@ import Section from '@/components/home/Section.astro'
 // import SkillLayout from '@/components/home/SkillLayout.astro'
 import config from '@/site-config'
 
-const languages = ['Html', 'JavaScript', 'CSS', 'Shell']
-const frontend = ['TypeScript', 'Vite', 'Webpack', 'Astro']
-const backend = ['Vercel', 'Waline']
+// const languages = ['Html', 'JavaScript', 'CSS', 'Shell']
+// const frontend = ['TypeScript', 'Vite', 'Webpack', 'Astro']
+// const backend = ['Vercel', 'Waline']
 
 const MAX_POSTS = 10
 const allPosts = await getBlogCollection()
@@ -21,7 +21,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 const imagePath = config.logo.src
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/*.{jpeg,jpg,png,gif,avif,webp}'
+  '/src/assets/*.{jpeg,jpg,png,gif,avif,webp}',
+  { eager: true }
 )
 if (!images[imagePath])
   throw new Error(
@@ -33,7 +34,7 @@ if (!images[imagePath])
   <main class='flex w-full flex-col items-center'>
     <section class='animate mb-10 flex flex-col items-center gap-y-7' id='content-header'>
       <Image
-        src={images[imagePath]()}
+        src={images[imagePath].default}
         alt={config.logo.alt || 'Profile'}
         class='h-28 w-auto rounded-xl border p-1'
         width={200}

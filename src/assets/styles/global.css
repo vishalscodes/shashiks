@@ -1,3 +1,80 @@
+/* ===== ENHANCED RESET (replaces UnoCSS preflight) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Border reset - SPECIFIC elements only (not universal) */
+/* This fixes the *::before, *::after warning */
+div,
+section,
+article,
+header,
+footer,
+main,
+aside,
+nav,
+figure,
+img,
+button,
+input,
+textarea,
+select,
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+label,
+canvas,
+svg,
+video,
+audio,
+object,
+embed,
+pre,
+code,
+blockquote,
+hr,
+iframe,
+picture,
+source,
+track,
+map,
+area,
+output,
+meter,
+progress,
+details,
+summary,
+menu,
+menuitem,
+dialog,
+datalist,
+optgroup,
+option {
+  border-width: 0;
+  border-style: solid;
+}
+
 /* [Animation] */
 @keyframes fade-in-up {
   0% {

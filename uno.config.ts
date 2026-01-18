@@ -1,5 +1,5 @@
 import type { TypographyOptions } from '@unocss/preset-typography'
-import { defineConfig, presetMini, presetTypography, type Rule } from 'unocss'
+import { defineConfig, presetTypography, presetWind3, type Rule } from 'unocss'
 
 import { integ } from './src/site.config.ts'
 
@@ -143,7 +143,7 @@ const themeColors = {
 }
 
 const rules: Rule<object>[] = [
-  // Fix unocss presetMini
+  // Fix unocss presetMini/presetWind3
   [
     'sr-only',
     {
@@ -173,7 +173,9 @@ const rules: Rule<object>[] = [
 
 export default defineConfig({
   presets: [
-    presetMini(), // required
+    presetWind3({
+      preflight: false
+    }), // required
     presetTypography(typographyConfig)
   ],
   rules,

@@ -33,6 +33,7 @@ export default defineConfig({
   trailingSlash: 'never',
   // root: './my-project-directory',
   server: { host: true },
+  prefetch: true,
 
   // [Adapter]
   // https://docs.astro.build/en/guides/deploy/
@@ -141,5 +142,16 @@ export default defineConfig({
         display: 'swap'
       }
     ]
+  },
+  build: {
+    // 'auto' inlines stylesheets smaller than Astro's internal threshold
+    // 'always' inlines ALL stylesheets (best for small blogs to kill render-blocking)
+    inlineStylesheets: 'always'
+  },
+  // If you want to use the specific Vite limit for other assets (like small icons)
+  vite: {
+    build: {
+      assetsInlineLimit: 4096 // 4KB
+    }
   }
 })

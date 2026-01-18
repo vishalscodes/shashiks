@@ -151,7 +151,9 @@ export default defineConfig({
   // If you want to use the specific Vite limit for other assets (like small icons)
   vite: {
     build: {
-      assetsInlineLimit: 4096 // 4KB
+      assetsInlineLimit: 4096, // 4KB
+      cssMinify: true,
+      minify: 'terser'
     }
   }
 })

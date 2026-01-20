@@ -89,3 +89,4 @@ collections:
             'image'
           ]
         editor_components: ['image', 'code-block']
+        modes: ['rich_text', 'markdown']

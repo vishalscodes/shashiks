@@ -9,6 +9,8 @@ backend:
   automatic_deployments: false
   base_url: https://sveltia-cms-auth.vishsandy410.workers.dev
 
+# publish_mode: editorial_workflow
+
 media_folder: 'public/images/blog'
 public_folder: '/images/blog'
 
@@ -42,14 +44,15 @@ collections:
         name: 'tags'
         widget: 'list'
         #i18n: true
-      - label: 'Image'
+      - label: 'Hero Image'
         name: 'image'
         widget: 'object'
         #i18n: true
+        required: false
         fields:
-          - { label: Source, name: src, widget: image } # i18n: 'duplicate'
-          - { label: Alt Text, name: alt, widget: string } # i18n: true
-      - label: 'Snippet'
+          - { label: Source, name: src, widget: image, required: false } # i18n: 'duplicate'
+          - { label: Alt Text, name: alt, widget: string, required: false } # i18n: true
+      - label: 'One Line Description of this blog (for homepage)'
         name: 'snippet'
         widget: 'text'
         #i18n: true
@@ -67,3 +70,22 @@ collections:
         widget: 'markdown'
         label: 'Post Body'
         #i18n: true
+        buttons:
+          [
+            'bold',
+            'italic',
+            'code',
+            'link',
+            'heading-one',
+            'heading-two',
+            'heading-three',
+            'heading-four',
+            'heading-five',
+            'heading-six',
+            'quote',
+            'code-block',
+            'bulleted-list',
+            'numbered-list',
+            'image'
+          ]
+        editor_components: ['image', 'code-block']

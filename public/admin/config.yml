@@ -53,7 +53,7 @@ collections:
           - { label: Source, name: src, widget: image, required: false } # i18n: 'duplicate'
           - { label: Alt Text, name: alt, widget: string, required: false } # i18n: true
       - label: 'One Line Description of this blog (for homepage)'
-        name: 'snippet'
+        name: 'description' # originally 'snippet'
         widget: 'text'
         #i18n: true
       - label: 'Publish Date'

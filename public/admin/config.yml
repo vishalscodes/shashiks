@@ -24,6 +24,7 @@ collections:
     #i18n: true
     label: 'Blog Posts'
     folder: 'src/content/blog'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     delete: true
     fields:
@@ -55,11 +56,12 @@ collections:
       - label: 'One Line Description of this blog (for homepage)'
         name: 'description' # originally 'snippet'
         widget: 'text'
+        required: false
         #i18n: true
       - label: 'Publish Date'
         name: 'publishDate'
         widget: 'datetime'
-        format: 'YYYY-MM-DD HH:mm'
+        format: 'YYYY-MM-DD' # 'YYYY-MM-DD HH:mm'
         #i18n: 'duplicate'
       - label: 'Category'
         name: 'category'

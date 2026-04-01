@@ -44,8 +44,8 @@ collections:
         #i18n: 'duplicate'
       - label: 'One Line Description of this blog (for homepage)'
         name: 'description' # originally 'snippet'
-        widget: 'text'
-        required: false
+        widget: 'string'
+        required: true
         #i18n: true
       - label: 'Tags'
         name: 'tags'
